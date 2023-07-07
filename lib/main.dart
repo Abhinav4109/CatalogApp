@@ -2,7 +2,7 @@
 import 'package:catalog_app/home_page.dart';
 import 'package:catalog_app/login_page.dart';
 import 'package:flutter/material.dart';
-
+import 'package:catalog_app/utlis/routes.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(brightness: Brightness.dark),
       initialRoute: '/login',
       routes: {
-        '/login': (context) => LoginPage(),
+        MyRoute.loginRoute: (context) => LoginPage(),
         '/home': (context) => HomePage()
       },
     );
